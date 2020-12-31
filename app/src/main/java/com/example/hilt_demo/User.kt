@@ -1,7 +1,12 @@
 package com.example.hilt_demo
 
+import dagger.hilt.android.scopes.ActivityScoped
+import javax.inject.Inject
 
+@ActivityScoped
 data class User(var id: Int, var name: String, var mood: String) {
+    @Inject constructor() : this(1, "Rikka", "不好")
+
     class Builder(var id: Int = 1, var name: String = "", var mood: String = "") {
         fun id(newId: Int): Builder {
             id = newId
