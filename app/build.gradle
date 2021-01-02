@@ -47,4 +47,10 @@ dependencies {
 
     implementation 'com.google.dagger:hilt-android:2.28-alpha'
     kapt 'com.google.dagger:hilt-android-compiler:2.28-alpha'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.2.0'
+    implementation 'com.squareup.retrofit2:retrofit-adapters:2.2.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'com.packetzoom:pz-okhttp3-interceptor:3.2.25'
+    implementation 'com.squareup.retrofit2:converter-gson:2.2.0'
 }

@@ -7,4 +7,12 @@ import javax.inject.Inject
 class User @Inject constructor(var clothes: Clothes){
 //    @Inject
 //    constructor() : this("Rikka", 23)
+
+    @BindProgrammer
+    @Inject
+    lateinit var profession: Profession
+
+    fun showMyself() {
+        profession.doJob()
+    }
 }
